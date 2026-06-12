@@ -1,0 +1,11 @@
+TechNova Solutions Security Policy
+
+1. Passwords must be changed every 90 days.
+
+2. VPN access is mandatory for external connections.
+
+3. Multi-factor authentication is required.
+
+4. Lost devices must be reported within 1 hour.
+
+5. Unauthorized external USB devices are prohibited.

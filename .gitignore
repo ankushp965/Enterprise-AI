@@ -1,0 +1,21 @@
+# System files
+.DS_Store
+frontend/.DS_Store
+
+# Environments
+venv/
+env/
+.env
+
+# Cache & Metadata
+__pycache__/
+*.pyc
+.deepeval/
+
+# Data & DB
+chroma_db/
+logs/
+*.log
+
+# Misc
+test-ollama.py

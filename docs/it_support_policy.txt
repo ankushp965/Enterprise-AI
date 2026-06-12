@@ -1,0 +1,14 @@
+TechNova Solutions IT Support Policy
+
+1. Password Reset:
+Use self-service portal first.
+
+2. If unsuccessful or fails, contact Level 1 IT support.
+
+3. VPN Issues:
+Escalate to Network Support Team.
+
+4. Critical incidents:
+Response time under 30 minutes.
+
+5. Laptop replacement approval requires manager authorization.
