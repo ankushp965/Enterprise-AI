@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import os
 import sys
 import json
@@ -18,6 +19,9 @@ from deepeval.metrics import (
     ContextualRelevancyMetric
 )
 from agents.multi_agent_graph import run_multi_agent_graph
+from observability.phoenix_setup import setup_phoenix
+
+setup_phoenix()
 
 DATA_FILE = "data/comprehensive_eval_questions.json"
 REPORT_FILE = "logs/evaluation_report.md"
