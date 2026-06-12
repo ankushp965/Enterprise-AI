@@ -84,7 +84,23 @@ def load_components():
             persist_directory="./chroma_db",
             embedding_function=embeddings,
         )
+        
+        # Find which sources are already in Chroma
+        existing_data = vectorstore.get()
+        existing_sources = set()
+        if existing_data and "metadatas" in existing_data:
+            for meta in existing_data["metadatas"]:
+                if meta and "source" in meta:
+                    existing_sources.add(meta["source"])
+                    
+        # Filter splits that belong to new sources
+        new_splits = [s for s in splits if s.metadata.get("source") not in existing_sources]
+        if new_splits:
+            print(f"Appending {len(new_splits)} new splits to ChromaDB...")
+            vectorstore.add_documents(new_splits)
+            
     else:
+        print(f"Creating new ChromaDB and embedding {len(splits)} splits...")
         vectorstore = Chroma.from_documents(
             documents=splits,
             embedding=embeddings,

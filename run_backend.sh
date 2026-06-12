@@ -6,4 +6,4 @@ cd "$(dirname "$0")"
 echo "Starting FastAPI Backend..."
 # Activate the virtual environment and start the Uvicorn server
 source venv/bin/activate
-uvicorn app.api:app --reload
+    uvicorn app.api:app --reload --reload-dir app --reload-dir agents --reload-dir observability
