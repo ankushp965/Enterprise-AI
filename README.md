@@ -8,8 +8,6 @@ An enterprise-grade, Multi-Agent Retrieval-Augmented Generation (RAG) system des
 
 ## 📸 Screenshots
 
-*(Replace these placeholder links with your actual screenshots after uploading them to a `docs/assets/` folder)*
-
 | User Interface | Phoenix Observability Trace | DeepEval Automated Report |
 | :---: | :---: | :---: |
 | ![UI Screenshot](docs/assets/ui.png) | ![Trace](docs/assets/trace.png) | ![Eval Report](docs/assets/eval.png) |
