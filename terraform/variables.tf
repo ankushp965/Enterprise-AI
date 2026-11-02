@@ -31,7 +31,7 @@ variable "public_subnet_cidr" {
 variable "instance_type" {
   description = "EC2 instance type (t3.medium is ideal since LLM is offloaded to OpenRoute)"
   type        = string
-  default     = "t3.micro"
+  default     = "c7i-flex.large"
 }
 
 variable "ssh_allowed_cidr" {
