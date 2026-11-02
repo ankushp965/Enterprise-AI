@@ -20,3 +20,8 @@ logs/
 
 # Misc
 test-ollama.py
+
+#Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
